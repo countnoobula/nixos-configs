@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./drivers.nix
+      ./home-manager.nix
     ];
 
   # Kernel.
@@ -42,8 +43,8 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Use SDDM
-  services.displayManager.sddm.enable = true;
+  # Use SDDM - Temporarily GDM
+  services.xserver.displayManager.gdm.enable = true;
   
   # Enable the GNOME Desktop Environment.
   services.xserver.desktopManager.gnome.enable = true;
@@ -105,6 +106,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     google-chrome
+    vscode
     traceroute
     pciutils
     usbutils
