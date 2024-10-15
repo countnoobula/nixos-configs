@@ -18,7 +18,6 @@
         systemd.enable = true;
         plugins = [
             pkgs.hyprlandPlugins.hyprexpo
-        ] ++ lib.optional (settings.themeDetails.bordersPlusPlus)
-            pkgs.hyprlandPlugins.borders-plus-plus;
+        ];
     };
 }

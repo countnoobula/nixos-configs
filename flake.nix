@@ -24,7 +24,7 @@
         # 'home-manager switch --flake .#username
         homeConfigurations = {
             ${settings.username} = home-manager.lib.homeManagerConfiguration {
-                # pkgs = nixpkgs.legacyPackages.${settings.system};
+                pkgs = nixpkgs.legacyPackages.${settings.system};
                 modules = [
                     (./. + "/profiles" + ("/" + settings.profile) + "/home.nix")
                     inputs.stylix.homeManagerModules.stylix
@@ -42,11 +42,7 @@
         home-manager.url = "github:nix-community/home-manager/master";
         home-manager.inputs.nixpkgs.follows = "nixpkgs";
         ags.url = "github:Aylur/ags";
-        hyprland = {
-            type = "git";
-            url = "https://github.com/hyprwm/Hyprland";
-            submodules = true;
-        };
+        hyprland.url = "github:hyprwm/Hyprland";
         aagl.url = "github:ezKEa/aagl-gtk-on-nix";
         aagl.inputs.nixpkgs.follows = "nixpkgs";
         stylix.url = "github:danth/stylix";

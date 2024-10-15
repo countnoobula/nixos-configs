@@ -37,8 +37,7 @@
       # Application shortcuts.
       "$mod, Return, exec, kitty"
       "$mod SHIFT, Return, exec, kitty --class floating"
-      "$mod, D, exec, neovide --no-vsync"
-      "$mod, F, exec, firefox"
+      "$mod, F, exec, google-chrome"
 
       # Special workspace
       "$mod, S, togglespecialworkspace"

@@ -7,7 +7,7 @@
       (./. + "../../../user/wm/hyprland.nix")
       
       # Theme
-      ../../themes/catppuccin.nix
+      ../../themes/stylix.nix
 
       # Apps
       ../../user/apps/kitty.nix
@@ -24,7 +24,7 @@
   home = {
     username = settings.username;
     homeDirectory = "/home/${settings.username}";
-  }
+  };
 
   nixpkgs.config.allowUnfree = true;
 
@@ -113,6 +113,6 @@
       BROWSER = settings.browser;
   };
 
-  environment.shells = with pkgs; [ zsh ];
+  # environment.shells = with pkgs; [ zsh ];
   programs.direnv.enable = true;
 }

@@ -12,17 +12,13 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      ll = "ls -lah"
+      ll = "ls -lah";
     };
 
     history = {
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
     };
-
-    initExtra = ''
-      set -o emacs
-    '';
 
     oh-my-zsh = {
       enable = true;

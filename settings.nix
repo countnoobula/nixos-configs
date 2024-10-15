@@ -9,7 +9,7 @@ rec {
     name = "Shaun van Tonder"; # Name (git config)
     email = "shaunmichaelvantonder@gmail.com"; # Email (git config)
     dotfilesDir = "/home/${username}/.dotfiles"; # Absolute path of the local repo
-    theme = "nord"; # Selected theme from themes directory (./themes/)
+    theme = "catppuccin"; # Selected theme from themes directory (./themes/)
     themeDetails = import (./. + "/themes/${theme}.nix") {dir = dotfilesDir;};
     wm = ["hyprland"]; # Selected window manager or desktop environment;
 
