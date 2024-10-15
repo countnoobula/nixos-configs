@@ -5,7 +5,7 @@
   boot.kernelPatches = [
     {
       name = "irq-patch";
-      patch = ./kernel/acpi_override.patch;
+      patch = ./acpi_override.patch;
     }
   ];
 }

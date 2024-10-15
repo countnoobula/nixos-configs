@@ -24,7 +24,7 @@
         # 'home-manager switch --flake .#username
         homeConfigurations = {
             ${settings.username} = home-manager.lib.homeManagerConfiguration {
-                pkgs = nixpkgs.legacyPackages.${settings.system};
+                # pkgs = nixpkgs.legacyPackages.${settings.system};
                 modules = [
                     (./. + "/profiles" + ("/" + settings.profile) + "/home.nix")
                     inputs.stylix.homeManagerModules.stylix

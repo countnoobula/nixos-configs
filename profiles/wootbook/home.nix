@@ -4,10 +4,10 @@
   imports = 
     [
       # Window Manager
-      (./. + "../../../user/wm" + ("/" + builtins.elemAt settings.wm 0) + ".nix")
+      (./. + "../../../user/wm/hyprland.nix")
       
       # Theme
-      ../../themes/default.nix
+      ../../themes/catppuccin.nix
 
       # Apps
       ../../user/apps/kitty.nix

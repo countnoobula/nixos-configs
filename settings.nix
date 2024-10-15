@@ -1,7 +1,7 @@
 {pkgs, ...}:
 rec {
     system = "x86_64-linux";
-    hostname = "shaun-wootbook"; # Hostname
+    hostname = "nixos"; # Hostname
     username = "countnoobula"; # Ssername
     profile = "wootbook"; # Select from profiles directory
     timezone = "Africa/Johannesburg"; # Select timezone

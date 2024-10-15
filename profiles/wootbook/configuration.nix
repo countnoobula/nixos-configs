@@ -22,11 +22,13 @@
       ../../system/security/firewall.nix
 
       # Docker
-      ../../virtualisation/docker.nix
+      ../../system/virtualisation/docker.nix
 
       # Window manager
-      (./. + "../../../system/wm"+("/" + builtins.elemAt settings.wm 0)+".nix")
+      (./. + "../../../system/wm/hyprland.nix")
     ];
+
+  system.stateVersion = "24.05";
 
   # Enable this for proprietary drivers [Looking at you Atheros Bluetooth]
   hardware.enableRedistributableFirmware = true;
@@ -36,7 +38,6 @@
 
   # Networking
   networking.hostName = "nixos"; # Define your hostname.
-  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;
 
   # Time

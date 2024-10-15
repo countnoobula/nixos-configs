@@ -3,6 +3,6 @@
 {
   imports = [
     ./boot.nix
-    ./custom-kernel.nix
+    # ./custom-kernel.nix
   ];
 }

@@ -10,12 +10,11 @@
   services.xserver = {
     enable = true;
     xkb = {
-        variant = "";
-        layout = "us,ru";
-        options = "grp:win_space_toggle";
+      variant = "";
+      layout = "za";
     };
     displayManager.startx = {
-        enable = true;
+      enable = true;
     };
   };
 }
