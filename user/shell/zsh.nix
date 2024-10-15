@@ -13,6 +13,7 @@
 
     shellAliases = {
       ll = "ls -lah";
+      nix-python = "nix develop ${settings.dotfilesDir}/shells/python -c zsh";
     };
 
     history = {
