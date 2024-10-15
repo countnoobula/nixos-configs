@@ -113,6 +113,14 @@
       BROWSER = settings.browser;
   };
 
+  gtk = {
+    enable = true;
+    iconTheme = {
+      name = "Papirus";
+      package = pkgs.papirus-icon-theme;
+    };
+  };
+
   # environment.shells = with pkgs; [ zsh ];
   programs.direnv.enable = true;
 }

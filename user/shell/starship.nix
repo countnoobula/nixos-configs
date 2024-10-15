@@ -11,8 +11,8 @@
 
       add_newline = true;
       character = {
-        error_symbol = "[](bold red)";
-        success_symbol = "[](bold blue)";
+        error_symbol = "[✗](bold red)";
+        success_symbol = "[➜](bold blue)";
         vicmd_symbol = "[](bold yellow)";
         format = "$symbol [|](bold bright-black) ";
       };

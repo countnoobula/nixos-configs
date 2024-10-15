@@ -27,4 +27,8 @@
       theme = "agnoster";
     };
   };
+
+  home.packages = with pkgs; [
+    eza
+  ];
 }
