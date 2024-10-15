@@ -82,6 +82,8 @@
 
     # dev tools
     vscode
+    gitkraken
+    jetbrains-toolbox
   ];
 
   xdg.enable = true;
