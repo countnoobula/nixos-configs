@@ -16,6 +16,9 @@
 
       # Shell
       ../../user/shell/zsh.nix
+
+      # Settings
+      ../../user/settings/dconf.nix
     ];
 
 
