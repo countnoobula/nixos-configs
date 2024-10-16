@@ -15,7 +15,13 @@
     };
 
     displayManager = {
-      sddm = {
+      gdm.enable = false;
+      lightdm.enable = false;
+    };
+  };
+
+  services.displayManager = {
+    sddm = {
         enable = true;
         package = pkgs.kdePackages.sddm;
         theme = "catppuccin-mocha";
@@ -26,10 +32,6 @@
       };
 
       autoLogin.enable = false;
-
-      gdm.enable = false;
-      lightdm.enable = false;
-    };
   };
 
   environment.etc."wayland-sessions/Hyprland.desktop" = {
