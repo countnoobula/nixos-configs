@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   programs.vscode = {
@@ -88,9 +88,9 @@
     ];
     userSettings = {
       "workbench.iconTheme" = "catppuccin-mocha";
-      "workbench.colorTheme" = "Mayukai Semantic Mirage";
+      "workbench.colorTheme" = lib.mkForce "catppuccin-mocha";
 
-      "editor.fontFamily" = "Jetbrains Mono";
+      "editor.fontFamily" = lib.mkForce "Jetbrains Mono";
       "editor.fontLigatures" = true;
 
       "nix.enableLanguageServer" = true;
