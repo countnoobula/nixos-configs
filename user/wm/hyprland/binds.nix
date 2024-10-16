@@ -21,9 +21,9 @@
 
     bind = [
       # Window/Session actions.
-      "$mod SHIFT, Q, killactive,"
+      "$mod, Q, killactive,"
       "$mod, W, fullscreen, 1"
-      "$mode SHIFT, W, fullscreen,"
+      "$mod SHIFT, W, fullscreen,"
       "$mod, E, togglefloating,"
       "$mod, delete, exit,"
 
@@ -117,7 +117,7 @@
     submap=resize
 
     # sets repeatable binds for resizing the active window
-    binde=,l,resizeactive,30 0
+    binde=,right,resizeactive,30 0
     binde=,left,resizeactive,-30 0
     binde=,up,resizeactive,0 -30
     binde=,down,resizeactive,0 30
