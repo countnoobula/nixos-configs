@@ -23,8 +23,8 @@ in {
     ];
 
     general = lib.mkForce {
-      gaps_in = 8;
-      gaps_out = 16;
+      gaps_in = 4;
+      gaps_out = 8;
       border_size = 2;
       allow_tearing = true;
       "col.active_border" = "rgba(${config.lib.stylix.colors.base0D}ff)";

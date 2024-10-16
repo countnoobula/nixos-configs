@@ -18,12 +18,12 @@
         ];
 
         windowrulev2 = [
-            "keepaspectratio,class:^(firefox)$,title:^(Picture-in-Picture)$"
-            "noborder,class:^(firefox)$,title:^(Picture-in-Picture)$"
-            "pin,class:^(firefox)$,title:^(Firefox)$"
-            "pin,class:^(firefox)$,title:^(Picture-in-Picture)$"
-            "float,class:^(firefox)$,title:^(Firefox)$"
-            "float,class:^(firefox)$,title:^(Picture-in-Picture)$"
+            "keepaspectratio,class:^(google-chrome)$,title:^(Picture-in-Picture)$"
+            "noborder,class:^(google-chrome)$,title:^(Picture-in-Picture)$"
+            "pin,class:^(google-chrome)$,title:^(google-chrome)$"
+            "pin,class:^(google-chrome)$,title:^(Picture-in-Picture)$"
+            "float,class:^(google-chrome)$,title:^(google-chrome)$"
+            "float,class:^(google-chrome)$,title:^(Picture-in-Picture)$"
 
             "float,class:^(floating)$,title:^(kitty)$"
             "size 50% 50%,class:^(floating)$,title:^(kitty)$"
