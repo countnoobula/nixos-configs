@@ -13,29 +13,25 @@
       layout = "za";
     };
 
-    displayManager = {
-      lightdm = {
-        enable = true;
-        greeters = {
-          gtk = {
-            enable = true;
-            theme.name = "Adwaita";
-            iconTheme.name = "Papirus";
-          };
-        };
-        extraConfig = ''
-          [Seat:*]
-          user-session=hyprland
-          log-level=debug
-        '';
-      };
-      gdm.enable = false;
-      sddm.enable = false;
-    };
+    displayManager.autoLogin.enable = false;
   };
 
-  environment.etc."wayland-sessions/hyprland.desktop" = {
-    source = pkgs.writeText "hyprland.desktop" ''
+  displayManager = {
+    sddm = {
+      enable = true;
+
+      wayland = {
+        enable = true;
+      };
+    };
+
+    defaultSession = "Hyprland";
+    gdm.enable = false;
+    lightdm.enable = false;
+  };
+
+  environment.etc."wayland-sessions/Hyprland.desktop" = {
+    source = pkgs.writeText "Hyprland.desktop" ''
       [Desktop Entry]
       Name=Hyprland
       Comment=Hyprland Wayland Compositor
