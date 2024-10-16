@@ -6,6 +6,10 @@
     pkgs.wl-clipboard
     pkgs.catppuccin-sddm.override {
       flavor = "mocha";
+      font = "Noto Sans";
+      fontSize = "12";
+      background = "${./wallpaper.png}";
+      loginBackground = true;
     }
   ];
 
@@ -19,7 +23,7 @@
     displayManager = {
       sddm = {
         enable = true;
-
+        package = pkgs.kdePackages.sddm;
         theme = "catppuccin-mocha";
 
         wayland = {
