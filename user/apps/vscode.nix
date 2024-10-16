@@ -7,26 +7,66 @@
       # ms-liveshare.vsliveshare
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       # Helpers
-      "editorconfig.editorconfig@0.16.4"
-      "github.copilot@1.238.0"
-      "github.copilot-chat@0.21.2"
+      {
+        publisher = "editorconfig";
+        name = "editorconfig";
+        version = "0.16.4";
+      }
+      {
+        publisher = "github";
+        name = "copilot";
+        version = "1.238.0";
+      }
+      {
+        publisher = "github";
+        name = "copilot-chat";
+        version = "0.21.2";
+      }
 
       # Containers
-      "hashicorp.terraform@2.33.0"
-      "ms-azuretools.vscode-docker@1.29.3"
+      {
+        publisher = "hashicorp";
+        name = "terraform";
+        version = "2.33.0";
+      }
+      {
+        publisher = "ms-azuretools";
+        name = "vscode-docker";
+        version = "1.29.3";
+      }
 
       # CI
-      "github.vscode-github-actions@0.27.0"
+      {
+        publisher = "github";
+        name = "vscode-github-actions";
+        version = "0.27.0";
+      }
 
       # Collab
-      "ms-vsliveshare.vsliveshare@1.0.5941"
+      {
+        publisher = "ms-vsliveshare";
+        name = "vsliveshare";
+        version = "1.0.5941";
+      }
 
       # Nix
-      "pinage404.nix-extension-pack@3.0.0"
-      "arrterian.nix-env-selector@1.0.11"
+      {
+        publisher = "pinage404";
+        name = "nix-extension-pack";
+        version = "3.0.0";
+      }
+      {
+        publisher = "arrterian";
+        name = "nix-env-selector";
+        version = "1.0.11";
+}
 
       # PHP
-      "bmewburn.vscode-intelephense-client@1.12.6"
-    ];
+      {
+        publisher = "bmewburn";
+        name = "vscode-intelephense-client";
+        version = "1.12.6";
+    }];
+
   };
 }
