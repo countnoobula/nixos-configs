@@ -15,8 +15,8 @@
         ", XF86AudioLowerVolume, exec, pulsemixer --change-volume -5"
         ", XF86MonBrightnessUp, exec, brightnessctl s +5%"
         ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
-        # "$mod CTRL, up, exec, pulsemixer --change-volume +5"
-        # "$mod CTRL, down, exec, pulsemixer --change-volume -5"
+        "$mod CTRL, up, exec, pulsemixer --change-volume +5"
+        "$mod CTRL, down, exec, pulsemixer --change-volume -5"
     ];
 
     bind = [
