@@ -16,6 +16,8 @@
       nix-python = "nix develop ${settings.dotfilesDir}/shells/python -c zsh";
       nix-android = "nix develop ${settings.dotfilesDir}/shells/android -c zsh";
       nix-nodejs = "nix develop ${settings.dotfilesDir}/shells/nodejs -c zsh";
+      nix-php = "nix develop ${settings.dotfilesDir}/shells/php -c zsh";
+      nix-dotnet = "nix develop ${settings.dotfilesDir}/shells/dotnet -c zsh";
     };
 
     history = {
