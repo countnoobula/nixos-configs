@@ -110,20 +110,20 @@
 
   xdg.enable = true;
   xdg.userDirs = {
-      enable = true;
-      createDirectories = true;
-      music = "${config.home.homeDirectory}/Media/Music";
-      videos = "${config.home.homeDirectory}/Media/Videos";
-      pictures = "${config.home.homeDirectory}/Media/Pictures";
-      download = "${config.home.homeDirectory}/Downloads";
-      documents = "${config.home.homeDirectory}/Documents";
-      templates = null;
-      desktop = null;
-      publicShare = null;
-      extraConfig = {
-          XDG_DOTFILES_DIR = "${settings.dotfilesDir}";
-          XDG_BOOK_DIR = "${config.home.homeDirectory}/Media/Books";
-      };
+    enable = true;
+    createDirectories = true;
+    music = "${config.home.homeDirectory}/Media/Music";
+    videos = "${config.home.homeDirectory}/Media/Videos";
+    pictures = "${config.home.homeDirectory}/Media/Pictures";
+    download = "${config.home.homeDirectory}/Downloads";
+    documents = "${config.home.homeDirectory}/Documents";
+    templates = null;
+    desktop = null;
+    publicShare = null;
+    extraConfig = {
+        XDG_DOTFILES_DIR = "${settings.dotfilesDir}";
+        XDG_BOOK_DIR = "${config.home.homeDirectory}/Media/Books";
+    };
   };
 
   xdg.dataFile.icons = {
