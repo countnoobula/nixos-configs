@@ -14,7 +14,6 @@
       # Apps
       ../../system/apps/cron.nix
       ../../system/apps/steam.nix
-      ../../system/apps/android-studio.nix
 
       # Power Options
       ../../system/power/nosleep.nix

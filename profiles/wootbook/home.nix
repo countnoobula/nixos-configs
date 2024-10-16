@@ -12,6 +12,7 @@
       # Apps
       ../../user/apps/kitty.nix
       ../../user/apps/git.nix
+      ../../user/apps/android-studio.nix
 
       # Shell
       ../../user/shell/zsh.nix
