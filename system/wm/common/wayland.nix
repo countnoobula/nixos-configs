@@ -4,6 +4,9 @@
   environment.systemPackages = [
     pkgs.wayland
     pkgs.wl-clipboard
+    pkgs.catppuccin-sddm.override {
+      flavor = "mocha";
+    }
   ];
 
   services.xserver = {
@@ -16,6 +19,8 @@
     displayManager = {
       sddm = {
         enable = true;
+
+        theme = "catppuccin-mocha";
 
         wayland = {
           enable = true;
