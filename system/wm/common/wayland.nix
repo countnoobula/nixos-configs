@@ -13,8 +13,11 @@
       variant = "";
       layout = "za";
     };
-    displayManager.startx = {
+
+    displayManager.sddm = {
       enable = true;
-    };
+      theme = "catppuccin-mocha";
+      package = pkgs.sddm;
+    }
   };
 }
