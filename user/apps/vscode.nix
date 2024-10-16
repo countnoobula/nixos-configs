@@ -4,7 +4,7 @@
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
-      ms-liveshare.vsliveshare
+      # ms-liveshare.vsliveshare
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       # Helpers
       "editorconfig.editorconfig@0.16.4"
