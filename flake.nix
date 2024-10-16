@@ -11,6 +11,7 @@
             ${settings.hostname} = nixpkgs.lib.nixosSystem {
                 modules = [
                     inputs.stylix.nixosModules.stylix
+                    catppuccin.nixosModules.catppuccin
                     (./. + "/profiles" + ("/" + settings.profile) + "/configuration.nix")
                 ];
                 specialArgs = {
@@ -28,6 +29,7 @@
                 modules = [
                     (./. + "/profiles" + ("/" + settings.profile) + "/home.nix")
                     inputs.stylix.homeManagerModules.stylix
+                    catppuccin.homeManagerModules.catppuccin
                 ];
                 extraSpecialArgs = {
                     inherit inputs;
@@ -51,6 +53,6 @@
             url = "github:hyprwm/hyprland-plugins";
             inputs.hyprland.follows = "hyprland";
         };
-        catppuccin.url = "github:catppuccino/nix/main";
+        catppuccin.url = "github:catppuccin/nix";
     };
 }
