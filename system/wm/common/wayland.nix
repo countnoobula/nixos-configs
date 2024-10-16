@@ -25,7 +25,6 @@
       };
     };
 
-    defaultSession = "Hyprland";
     gdm.enable = false;
     lightdm.enable = false;
   };
