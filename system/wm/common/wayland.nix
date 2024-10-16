@@ -31,7 +31,6 @@
       };
       gdm.enable = false;
       sddm.enable = false;
-      xdm.enable = false;
     };
   };
 
