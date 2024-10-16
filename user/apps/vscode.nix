@@ -26,6 +26,14 @@
         sha256 = "sha256-n66vaKacCZuFOqZsbRdjH9H7JMXo0+IlYgGQiMj1eME=";
       }
 
+      # Trackers
+      {
+        name = "vscode-wakatime";
+        publisher = "WakaTime";
+        version = "24.2.0";
+        hash = "sha256-1AAerJsgmXJGiEOlxQRRo00JxYBm1Y8xI4rMQUcdv6k=";
+      }
+
       # Containers
       {
         name = "terraform";
