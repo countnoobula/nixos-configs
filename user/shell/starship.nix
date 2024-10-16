@@ -4,6 +4,7 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+    catppuccin.enable = true;
     settings = {
       format = ''
 [┌─>](bold blue) $all[└─>](bold blue) $character

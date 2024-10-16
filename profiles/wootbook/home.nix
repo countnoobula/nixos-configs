@@ -1,11 +1,11 @@
 { config, pkgs, settings, ... }:
 
 {
-  imports = 
+  imports =
     [
       # Window Manager
       (./. + "../../../user/wm/hyprland.nix")
-      
+
       # Theme
       ../../themes/stylix.nix
 
@@ -19,11 +19,18 @@
 
       # Settings
       ../../user/settings/dconf.nix
+
+      # Catppuccin
+      <catppuccin/modules/home-manager>
     ];
 
 
   home.stateVersion = "24.05";
   stylix.targets.hyprland.enable = true;
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
+  };
 
   # Manage the Nix configuration file to enable experimental features
   home.file.".config/nix/nix.conf" = {
