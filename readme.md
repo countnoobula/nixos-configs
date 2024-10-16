@@ -13,3 +13,7 @@ sudo nixos-rebuild switch --flake .
 
 # credits
 shout out to [Serpentian/AlfheimOS](https://github.com/Serpentian/AlfheimOS/) for most of the inspo and help from his files
+
+# issues
+- bluetooth is not working
+- cannot share screen or take screenshots
