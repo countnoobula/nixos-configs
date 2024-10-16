@@ -13,6 +13,7 @@
       ../../user/apps/kitty.nix
       ../../user/apps/git.nix
       ../../user/apps/android-studio.nix
+      ../../user/apps/vscode.nix
 
       # Shell
       ../../user/shell/zsh.nix
@@ -101,7 +102,6 @@
     google-chrome
 
     # dev tools
-    vscode
     gitkraken
     jetbrains-toolbox
   ];
