@@ -26,7 +26,7 @@
       ../../system/virtualisation/kvm.nix
 
       # Window manager
-      ../../../system/wm/hyprland.nix
+      ../../system/wm/hyprland.nix
     ];
 
   system.stateVersion = "24.05";
