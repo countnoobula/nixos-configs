@@ -24,8 +24,6 @@
 
   # Manage the Nix configuration file to enable experimental features
   home.file.".config/nix/nix.conf" = {
-    ensure = true;
-    # If the ~/.config/nix directory doesn't exist, Home Manager will create it
     text = ''
       # Enable experimental features for Nix
       experimental-features = nix-command flakes
@@ -37,7 +35,10 @@
     homeDirectory = "/home/${settings.username}";
   };
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    android_sdk.accept_license = true;
+  };
 
   home.packages = with pkgs; [
     # archives

@@ -4,7 +4,6 @@
   # Include Android Studio and Android Platform Tools in your Home Manager packages
   home.packages = with pkgs; [
     android-studio-full  # Provides Android Studio
-    androidplatform-tools  # Provides adb and other essential tools
   ];
 
   # Set up environment variables for Android development
