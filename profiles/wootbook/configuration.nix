@@ -21,8 +21,9 @@
       # Security
       ../../system/security/firewall.nix
 
-      # Docker
+      # Virtualization
       ../../system/virtualisation/docker.nix
+      ../../system/virtualisation/kvm.nix
 
       # Window manager
       (./. + "../../../system/wm/hyprland.nix")
@@ -48,7 +49,7 @@
   users.users.${settings.username} = {
       isNormalUser = true;
       description = settings.username;
-      extraGroups = [ "networkmanager" "wheel" "docker" "kvm" "adbusers" ];
+      extraGroups = [ "networkmanager" "wheel" "docker" "kvm" "adbusers" "libvirtd" ];
   };
 
   # Set shell
