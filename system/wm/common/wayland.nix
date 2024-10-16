@@ -6,7 +6,6 @@
     pkgs.wl-clipboard
   ];
 
-  # Configure xwayland
   services.xserver = {
     enable = true;
     xkb = {
@@ -24,16 +23,16 @@
             iconTheme.name = "Papirus";
           };
         };
+        extraConfig = ''
+          [Seat:*]
+          user-session=hyprland
+        '';
       };
-      # sddm = {
-      #   enable = true;
-      #   theme = "catppuccin-mocha";
-      #   package = pkgs.sddm;
-      # };
     };
+
+    windowManager.hyprland.enable = true;
   };
 
-  # Create a Hyprland Session for SDDM
   environment.etc."wayland-sessions/hyprland.desktop" = {
     source = pkgs.writeText "hyprland.desktop" ''
       [Desktop Entry]

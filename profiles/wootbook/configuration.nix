@@ -69,10 +69,6 @@
     wget
     git
     vim
-    wayland
-    wl-clipboard
-    lightdm
-    lightdm-gtk-greeter
   ];
 
   services.gvfs.enable = true;
