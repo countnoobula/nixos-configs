@@ -48,7 +48,7 @@
   users.users.${settings.username} = {
       isNormalUser = true;
       description = settings.username;
-      extraGroups = [ "networkmanager" "wheel" "docker" ];
+      extraGroups = [ "networkmanager" "wheel" "docker" "kvm" "adbusers" ];
   };
 
   # Set shell

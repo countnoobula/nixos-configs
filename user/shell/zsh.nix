@@ -14,6 +14,7 @@
     shellAliases = {
       ll = "ls -lah";
       nix-python = "nix develop ${settings.dotfilesDir}/shells/python -c zsh";
+      nix-android = "nix develop ${settings.dotfilesDir}/shells/android -c zsh"
     };
 
     history = {
