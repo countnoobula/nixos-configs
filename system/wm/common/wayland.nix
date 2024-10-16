@@ -25,7 +25,7 @@
           settings = {
             theme-name = "Adwaita";
             icon-theme-name = "Papirus";
-          }
+          };
         };
       };
       # sddm = {
