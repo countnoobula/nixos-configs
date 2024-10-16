@@ -33,6 +33,7 @@
 
   # Enable this for proprietary drivers [Looking at you Atheros Bluetooth]
   hardware.enableRedistributableFirmware = true;
+  hardware.enableAllFirmware = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
