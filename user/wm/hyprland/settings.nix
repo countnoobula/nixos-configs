@@ -17,7 +17,7 @@ in {
       "ags &"
       # "hyprctl setcursor Catppuccin-Mocha-Lavender-Cursors 24"
       "[workspace 1 silent] google-chrome"
-      "[workspace 2 silent] kitty htop"
+      "[workspace 2 silent] kitty btop"
     ];
 
     general = lib.mkForce {
