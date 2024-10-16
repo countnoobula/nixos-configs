@@ -22,8 +22,8 @@
         greeters = {
           gtk = {
             enable = true;
-            theme-name = "Adwaita";
-            icon-theme-name = "Papirus";
+            theme.name = "Adwaita";
+            iconTheme.name = "Papirus";
           };
         };
       };
