@@ -73,6 +73,7 @@
     gawk
     zstd
     gnupg
+    sway-contrib.grimshot
 
     # nix related
     #
