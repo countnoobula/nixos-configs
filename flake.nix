@@ -11,7 +11,7 @@
             ${settings.hostname} = nixpkgs.lib.nixosSystem {
                 modules = [
                     inputs.stylix.nixosModules.stylix
-                    catppuccin.nixosModules.catppuccin
+                    inputs.catppuccin.nixosModules.catppuccin
                     (./. + "/profiles" + ("/" + settings.profile) + "/configuration.nix")
                 ];
                 specialArgs = {
@@ -29,7 +29,7 @@
                 modules = [
                     (./. + "/profiles" + ("/" + settings.profile) + "/home.nix")
                     inputs.stylix.homeManagerModules.stylix
-                    catppuccin.homeManagerModules.catppuccin
+                    inputs.catppuccin.homeManagerModules.catppuccin
                 ];
                 extraSpecialArgs = {
                     inherit inputs;
