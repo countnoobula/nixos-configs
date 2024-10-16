@@ -15,11 +15,16 @@
     };
 
     displayManager = {
-      sddm = {
+      lightdm = {
         enable = true;
-        theme = "catppuccin-mocha";
-        package = pkgs.sddm;
+        theme = "breeze";
+        greeter = pkgs.lightdm-gtk-greeter;
       };
+      # sddm = {
+      #   enable = true;
+      #   theme = "catppuccin-mocha";
+      #   package = pkgs.sddm;
+      # };
     };
   };
 
