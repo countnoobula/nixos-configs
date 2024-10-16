@@ -19,10 +19,9 @@
         enable = true;
         theme = "breeze";
         package = pkgs.lightdm;
-        greeter = {
-          package = pkgs.lightdm-gtk-greeter;
-          enable = true;
-          settings = {
+        greeters = {
+          gtk = {
+            enable = true;
             theme-name = "Adwaita";
             icon-theme-name = "Papirus";
           };
