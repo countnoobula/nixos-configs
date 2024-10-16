@@ -51,5 +51,6 @@
             url = "github:hyprwm/hyprland-plugins";
             inputs.hyprland.follows = "hyprland";
         };
+        catppuccin.url = "github:catppuccino/nix";
     };
 }
