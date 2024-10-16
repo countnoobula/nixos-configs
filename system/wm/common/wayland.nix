@@ -26,11 +26,10 @@
         extraConfig = ''
           [Seat:*]
           user-session=hyprland
+          log-level=debug
         '';
       };
     };
-
-    windowManager.hyprland.enable = true;
   };
 
   environment.etc."wayland-sessions/hyprland.desktop" = {
