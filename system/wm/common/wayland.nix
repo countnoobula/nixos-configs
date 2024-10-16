@@ -18,6 +18,6 @@
       enable = true;
       theme = "catppuccin-mocha";
       package = pkgs.sddm;
-    }
+    };
   };
 }
