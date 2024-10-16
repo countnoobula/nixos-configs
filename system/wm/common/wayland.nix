@@ -18,7 +18,15 @@
       lightdm = {
         enable = true;
         theme = "breeze";
-        greeter = pkgs.lightdm-gtk-greeter;
+        package = pkgs.lightdm;
+        greeter = {
+          package = pkgs.lightdm-gtk-greeter;
+          enable = true;
+          settings = {
+            theme-name = "Adwaita";
+            icon-theme-name = "Papirus";
+          }
+        };
       };
       # sddm = {
       #   enable = true;
