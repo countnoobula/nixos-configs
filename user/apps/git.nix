@@ -9,6 +9,7 @@
     userEmail = settings.email;
     extraConfig = {
       core.editor = "vim";
+      pull.rebase = true;
     };
   };
 }
