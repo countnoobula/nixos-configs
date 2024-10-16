@@ -6,7 +6,7 @@ let
 
   # Extract the vendor_id using a regular expression
   # This regex captures the value after 'vendor_id\t: '
-  vendorMatch = builtins.match "vendor_id\\s+:\\s+([A-Za-z0-9]+)" cpuInfo;
+  vendorMatch = builtins.match "vendor_id[[:space:]]+:[[:space:]]+([A-Za-z0-9]+)" cpuInfo;
 
   # Determine the CPU vendor
   cpuVendor = if vendorMatch != null && vendorMatch != ""
