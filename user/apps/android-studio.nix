@@ -12,5 +12,5 @@
     ANDROID_HOME = "${pkgs.androidsdk}";
     JAVA_HOME = "${pkgs.openjdk}";
     PATH = "${pkgs.androidsdk}/cmdline-tools/latest/bin:${pkgs.androidsdk}/platform-tools:${pkgs.android-studio}/bin:$PATH";
-  }
+  };
 }
