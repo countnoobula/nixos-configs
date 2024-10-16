@@ -13,20 +13,20 @@
       layout = "za";
     };
 
-    displayManager.autoLogin.enable = false;
-  };
-
-  displayManager = {
-    sddm = {
-      enable = true;
-
-      wayland = {
+    displayManager = {
+      sddm = {
         enable = true;
-      };
-    };
 
-    gdm.enable = false;
-    lightdm.enable = false;
+        wayland = {
+          enable = true;
+        };
+      };
+
+      autoLogin.enable = false;
+
+      gdm.enable = false;
+      lightdm.enable = false;
+    };
   };
 
   environment.etc."wayland-sessions/Hyprland.desktop" = {
