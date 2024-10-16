@@ -19,9 +19,6 @@
 
       # Settings
       ../../user/settings/dconf.nix
-
-      # Catppuccin
-      <catppuccin/modules/home-manager>
     ];
 
 

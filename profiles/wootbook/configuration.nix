@@ -27,9 +27,6 @@
 
       # Window manager
       ../../../system/wm/hyprland.nix
-
-      # Catppuccin
-      <catppuccin/modules/nixos>
     ];
 
   system.stateVersion = "24.05";
