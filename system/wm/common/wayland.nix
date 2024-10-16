@@ -17,8 +17,6 @@
     displayManager = {
       lightdm = {
         enable = true;
-        theme = "breeze";
-        package = pkgs.lightdm;
         greeters = {
           gtk = {
             enable = true;
