@@ -15,8 +15,8 @@
         ", XF86AudioLowerVolume, exec, pulsemixer --change-volume -5"
         ", XF86MonBrightnessUp, exec, brightnessctl s +5%"
         ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
-        # "$mod ALT, up, exec, pulsemixer --change-volume +5"
-        # "$mod ALT, down, exec, pulsemixer --change-volume -5"
+        # "$mod CTRL, up, exec, pulsemixer --change-volume +5"
+        # "$mod CTRL, down, exec, pulsemixer --change-volume -5"
     ];
 
     bind = [
@@ -48,7 +48,7 @@
       "$mod, SPACE, exec, ags -t launcher"
 
       # Screenshot
-      "$mod SHIFT, z, exec, wl-copy < $(grimshot --notify save area $XDG_PICTURES_DIR/Screenshots/$(TZ=utc date +'screenshot_%Y-%m-%d-%H%M%S.%3N.png'))"
+      "$mod SHIFT, p, exec, wl-copy < $(grimshot --notify save area $XDG_PICTURES_DIR/Screenshots/$(TZ=utc date +'screenshot_%Y-%m-%d-%H%M%S.%3N.png'))"
 
       # Move window focus with vim keys.
       "$mod, left, movefocus, l"
@@ -57,12 +57,12 @@
       "$mod, down, movefocus, d"
 
       # Music control
-      # "$mod ALT, m, exec, pulsemixer --id $(pulsemixer --list-sources | cut -f3 | grep 'Default' | cut -d ',' -f 1 | cut -c 6-) --toggle-mute"
+      "$mod CTRL, m, exec, pulsemixer --id $(pulsemixer --list-sources | cut -f3 | grep 'Default' | cut -d ',' -f 1 | cut -c 6-) --toggle-mute"
       # ", XF86AudioMicMute, exec, pulsemixer --id $(pulsemixer --list-sources | cut -f3 | grep 'Default' | cut -d ',' -f 1 | cut -c 6-) --toggle-mute"
       # ",XF86AudioMute, exec, pulsemixer --id $(pulsemixer --list-sinks | cut -f3 | grep 'Default' | cut -d ',' -f 1 | cut -c 6-) --toggle-mute"
-      # "$mod ALT, right, exec, hyprmusic next"
-      # "$mod ALT, h, exec, hyprmusic previous"
-      # "$mod ALT, p, exec, hyprmusic play-pause"
+      "$mod CTRL, right, exec, hyprmusic next"
+      "$mod CTRL, left, exec, hyprmusic previous"
+      "$mod CTRL, p, exec, hyprmusic play-pause"
 
       # Swap windows with vim keys
       "$mod SHIFT, left, swapwindow, l"
