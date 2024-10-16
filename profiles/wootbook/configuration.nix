@@ -70,14 +70,14 @@
       WIFI_PWR_ON_AC="off";
       WIFI_PWR_ON_BAT="off";
       RESTORE_DEVICE_STATE_ON_STARTUP=0;
-      USB_ALLOWLIST="13d3:3585"; #Logitech mouse
+      USB_ALLOWLIST="13d3:3585"; # Bluetooth
       USB_EXCLUDE_BTUSB=1;
       USB_EXCLUDE_PHONE=1;
       RUNTIME_PM_BLACKLIST="13d3:3585";
     };
-    extraConfig = ''
-  	  USB_AUTOSUSPEND=0
-    '';
+    # extraConfig = ''
+  	#   USB_AUTOSUSPEND=0
+    # '';
   };
 
   # Time
