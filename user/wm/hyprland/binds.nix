@@ -15,8 +15,8 @@
         ", XF86AudioLowerVolume, exec, pulsemixer --change-volume -5"
         ", XF86MonBrightnessUp, exec, brightnessctl s +5%"
         ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
-        # "$mod ALT, k, exec, pulsemixer --change-volume +5"
-        # "$mod ALT, j, exec, pulsemixer --change-volume -5"
+        # "$mod ALT, up, exec, pulsemixer --change-volume +5"
+        # "$mod ALT, down, exec, pulsemixer --change-volume -5"
     ];
 
     bind = [
@@ -51,24 +51,24 @@
       "$mod SHIFT, z, exec, wl-copy < $(grimshot --notify save area $XDG_PICTURES_DIR/Screenshots/$(TZ=utc date +'screenshot_%Y-%m-%d-%H%M%S.%3N.png'))"
 
       # Move window focus with vim keys.
-      "$mod, h, movefocus, l"
-      "$mod, l, movefocus, r"
-      "$mod, k, movefocus, u"
-      "$mod, j, movefocus, d"
+      "$mod, left, movefocus, l"
+      "$mod, right, movefocus, r"
+      "$mod, up, movefocus, u"
+      "$mod, down, movefocus, d"
 
       # Music control
       # "$mod ALT, m, exec, pulsemixer --id $(pulsemixer --list-sources | cut -f3 | grep 'Default' | cut -d ',' -f 1 | cut -c 6-) --toggle-mute"
       # ", XF86AudioMicMute, exec, pulsemixer --id $(pulsemixer --list-sources | cut -f3 | grep 'Default' | cut -d ',' -f 1 | cut -c 6-) --toggle-mute"
       # ",XF86AudioMute, exec, pulsemixer --id $(pulsemixer --list-sinks | cut -f3 | grep 'Default' | cut -d ',' -f 1 | cut -c 6-) --toggle-mute"
-      # "$mod ALT, l, exec, hyprmusic next"
+      # "$mod ALT, right, exec, hyprmusic next"
       # "$mod ALT, h, exec, hyprmusic previous"
       # "$mod ALT, p, exec, hyprmusic play-pause"
 
       # Swap windows with vim keys
-      "$mod SHIFT, h, swapwindow, l"
-      "$mod SHIFT, l, swapwindow, r"
-      "$mod SHIFT, k, swapwindow, u"
-      "$mod SHIFT, j, swapwindow, d"
+      "$mod SHIFT, left, swapwindow, l"
+      "$mod SHIFT, right, swapwindow, r"
+      "$mod SHIFT, up, swapwindow, u"
+      "$mod SHIFT, down, swapwindow, d"
 
       # Move monitor focus.
       "$mod, TAB, focusmonitor, +1"
@@ -85,8 +85,8 @@
       "$mod, 9,exec,hyprworkspace 9"
       "$mod, 0,exec,hyprworkspace 10"
 
-      "$mod CTRL, h, workspace, r-1"
-      "$mod CTRL, l, workspace, r+1"
+      "$mod CTRL, left, workspace, r-1"
+      "$mod CTRL, right, workspace, r+1"
 
       # Scroll through monitor workspaces with mod + scroll
       "$mod, mouse_down, workspace, r-1"
@@ -104,8 +104,8 @@
       "$mod SHIFT, 8, movetoworkspace, 8"
       "$mod SHIFT, 9, movetoworkspace, 9"
       "$mod SHIFT, 0, movetoworkspace, 10"
-      "$mod CTRL SHIFT, l, movetoworkspace, r+1"
-      "$mod CTRL SHIFT, h, movetoworkspace, r-1"
+      "$mod CTRL SHIFT, right, movetoworkspace, r+1"
+      "$mod CTRL SHIFT, left, movetoworkspace, r-1"
     ];
   };
   wayland.windowManager.hyprland.extraConfig = ''
@@ -118,9 +118,9 @@
 
     # sets repeatable binds for resizing the active window
     binde=,l,resizeactive,30 0
-    binde=,h,resizeactive,-30 0
-    binde=,k,resizeactive,0 -30
-    binde=,j,resizeactive,0 30
+    binde=,left,resizeactive,-30 0
+    binde=,up,resizeactive,0 -30
+    binde=,down,resizeactive,0 30
 
     # use reset to go back to the global submap
     bind=,escape,exec,truncate -s 0 /tmp/hypr_submap
