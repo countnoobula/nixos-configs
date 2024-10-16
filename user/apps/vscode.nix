@@ -4,7 +4,8 @@
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
-      # ms-liveshare.vsliveshare
+      catppuccin.catppuccin-vsc
+      catppuccin.catppuccin-vsc-icons
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       # Helpers
       {
@@ -85,6 +86,34 @@
         sha256 = "sha256-xmBUdPU1z26qKLUWcqEyOjiZUsFVHePYsgrqOTOSpXQ=";
       }
     ];
+    userSettings = {
+      "workbench.iconTheme" = "catppuccin-mocha";
+      "workbench.colorTheme" = "Mayukai Semantic Mirage";
 
+      "editor.fontFamily" = "Jetbrains Mono";
+      "editor.fontLigatures" = true;
+
+      "nix.enableLanguageServer" = true;
+      "nix.serverPath" = "nixd";
+      "nix.formatterPath" = "nixpkgs-fmt";
+      "nix.serverSettings" = {
+        "nixd" = {
+          "formatting" = {
+            "command" = [ "nixpkgs-fmt" ];
+          };
+        };
+      };
+
+      "git.enableCommitSigning" = false;
+      "files.autoSave" = "afterDelay";
+      "files.autoSaveDelay" = 100;
+
+      "powermode.enabled" = false; # stupid
+      "powermode.combo.location" = "off";
+      "powermode.combo.counterEnabled" = "hide";
+      "powermode.shake.enabled" = false;
+      "powermode.explosions.frequency" = 1;
+      "powermode.combo.timerEnable" = "hide";
+    };
   };
 }
