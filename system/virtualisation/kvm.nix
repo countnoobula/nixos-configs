@@ -2,8 +2,6 @@
 
 {
   # Enable virtualization support
-  virtualisation.libvirtd = {
-    enable = true;
-    gui = true; # Enable virt-manager
-  };
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 }
