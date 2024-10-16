@@ -29,7 +29,15 @@
           log-level=debug
         '';
       };
+      gdm.enable = false;
+      sddm.enable = false;
+      xdm.enable = false;
     };
+  };
+
+  services.xserver.windowManager = {
+    # Disable any default window manager
+    none.enable = true;
   };
 
   environment.etc."wayland-sessions/hyprland.desktop" = {
