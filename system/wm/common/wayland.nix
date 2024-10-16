@@ -14,10 +14,26 @@
       layout = "za";
     };
 
-    displayManager.sddm = {
-      enable = true;
-      theme = "catppuccin-mocha";
-      package = pkgs.sddm;
+    displayManager = {
+      sddm = {
+        enable = true;
+        theme = "catppuccin-mocha";
+        package = pkgs.sddm;
+      };
     };
+  };
+
+  # Create a Hyprland Session for SDDM
+  environment.etc."wayland-sessions/hyprland.desktop" = {
+    source = pkgs.writeText "hyprland.desktop" ''
+      [Desktop Entry]
+      Name=Hyprland
+      Comment=Hyprland Wayland Compositor
+      Exec=Hyprland
+      Type=Application
+      DesktopNames=Hyprland
+      Keywords=tiling;wm;compositor;wayland;
+    '';
+    mode = "0644";
   };
 }

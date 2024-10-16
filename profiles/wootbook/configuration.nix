@@ -1,7 +1,7 @@
 { config, pkgs, settings, ... }:
 
 {
-  imports = 
+  imports =
     [
       ./hardware-configuration.nix
 
@@ -10,7 +10,7 @@
 
       # Drivers
       ../../system/hardware
-      
+
       # Apps
       ../../system/apps/cron.nix
       ../../system/apps/steam.nix
@@ -69,6 +69,8 @@
     wget
     git
     vim
+    wayland
+    wl-clipboard
   ];
 
   services.gvfs.enable = true;
