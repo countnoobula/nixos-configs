@@ -15,6 +15,7 @@
       ll = "ls -lah";
       nix-python = "nix develop ${settings.dotfilesDir}/shells/python -c zsh";
       nix-android = "nix develop ${settings.dotfilesDir}/shells/android -c zsh";
+      nix-nodejs = "nix develop ${settings.dotfilesDir}/shells/nodejs -c zsh";
     };
 
     history = {
