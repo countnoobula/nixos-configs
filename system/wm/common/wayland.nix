@@ -34,11 +34,6 @@
     };
   };
 
-  services.xserver.windowManager = {
-    # Disable any default window manager
-    none.enable = true;
-  };
-
   environment.etc."wayland-sessions/hyprland.desktop" = {
     source = pkgs.writeText "hyprland.desktop" ''
       [Desktop Entry]
