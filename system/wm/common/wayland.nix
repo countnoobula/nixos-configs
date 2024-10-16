@@ -4,13 +4,7 @@
   environment.systemPackages = [
     pkgs.wayland
     pkgs.wl-clipboard
-    pkgs.catppuccin-sddm.override {
-      flavor = "mocha";
-      font = "Noto Sans";
-      fontSize = "12";
-      background = "${./wallpaper.png}";
-      loginBackground = true;
-    }
+    pkgs.catppuccin-sddm
   ];
 
   services.xserver = {
