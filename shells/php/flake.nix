@@ -7,12 +7,12 @@
     phps.url = "github:loophp/nix-shell";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, phps }:
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {
         inherit system;
         overlays = [
-          inputs.phps.overlays.default
+          phps.overlays.default
         ];
       };
     in
@@ -20,13 +20,13 @@
       devShells.default = pkgs.mkShell {
         php = pkgs.api.buildPhpFromComposer {
           php = pkgs.php83;
-          src = inputs.self;
+          src = self;
           withExtensions = ["xdebug" "opcache"];
         };
 
         packages = [
-          php
-          php.packages.composer
+          pkgs.php
+          pkgs.php.packages.composer
         ];
 
         shellHook = ''
