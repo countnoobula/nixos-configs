@@ -14,7 +14,7 @@
     shellAliases = {
       ll = "ls -lah";
 
-      nix-android = "nix develop ${settings.dotfilesDir}/shells/android -c zsh";
+      nix-android = "export NIXPKGS_ALLOW_INSECURE=1 nix develop ${settings.dotfilesDir}/shells/android -c zsh --impure";
       nix-aws = "nix develop ${settings.dotfilesDir}/shells/aws -c zsh";
       nix-dotnet = "nix develop ${settings.dotfilesDir}/shells/dotnet -c zsh";
       nix-java = "nix develop ${settings.dotfilesDir}/shells/java -c zsh";
