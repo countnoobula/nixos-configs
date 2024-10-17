@@ -13,12 +13,12 @@
     {
       devShells.default = pkgs.mkShell {
         packages = [
-          pkgs.jdk11
+          pkgs.jdk17
         ];
 
         shellHook = ''
           echo "Entering Java development environment"
-          PATH="${pkgs.jdk11}/bin:$PATH"
+          PATH="${pkgs.jdk17}/bin:$PATH"
         '';
       };
     });
