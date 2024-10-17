@@ -104,6 +104,9 @@
     # dev tools
     gitkraken
     jetbrains-toolbox
+
+    # games
+    ferium
   ];
 
   xdg.enable = true;
