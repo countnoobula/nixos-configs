@@ -12,10 +12,8 @@
     in flake-utils.lib.eachDefaultSystem (system: {
       packages.default = pkgs.mkShell {
         packages = [
-          (with dotnetCorePackages; combinePackages [
-            dotnetCorePackages.sdk_7_0
-            dotnetPackages.Nuget
-          ])
+          pkgs.dotnetPackages.sdk_7_0
+          pkgs.dotnetPackages.Nuget
         ];
 
         shellHook = ''
