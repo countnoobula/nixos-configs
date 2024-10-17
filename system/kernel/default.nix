@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./boot.nix
-    # ./custom-kernel.nix
+    ./acpi_patch.nix
   ];
 }
