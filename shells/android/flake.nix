@@ -9,7 +9,12 @@
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs {
+          inherit system;
+          config.permittedInsecurePackages = [
+            "python-2.7.18.6"
+          ];
+        };
       in
       {
         devShells.default = pkgs.mkShell {
