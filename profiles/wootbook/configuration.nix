@@ -114,7 +114,5 @@
   services.openssh.enable = true;
   services.openssh.passwordAuthentication = true;
 
-  services.gvfs.enable = true;
-
   programs.direnv.enable = true;
 }
