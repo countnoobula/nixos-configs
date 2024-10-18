@@ -5,9 +5,6 @@
     [
       ./hardware-configuration.nix
 
-      # Kernel
-      ../../system/kernel
-
       # Drivers
       ../../system/hardware
 
@@ -113,14 +110,6 @@
   # OpenSSH for easier config
   services.openssh.enable = true;
   services.openssh.passwordAuthentication = true;
-
-  # Nvidia Prime
-  hardware.nvidia.prime = {
-    offload.enable = true;
-    # sync.enable = true;
-    amdgpuBusId = "PCI:7:0:0"; # Phoenix3
-    nvidiaBusId = "PCI:1:0:0";
-  };
 
   programs.direnv.enable = true;
 }
