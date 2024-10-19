@@ -5,6 +5,24 @@ import icons from "lib/icons"
 const nix = JSON.parse(
     Utils.readFile(Utils.CACHE_DIR + "/options-nix.json") || '{}')
 
+// Function to read Git user email from .gitconfig file
+function getGitEmail() {
+    const gitConfigPath = Utils.HOME + "/.gitconfig";
+    const gitConfig = Utils.readFile(gitConfigPath);
+    const emailMatch = gitConfig.match(/\[user\]\s+email\s+=\s+(.+)/);
+    return emailMatch ? emailMatch[1].trim().toLowerCase() : null;
+}
+
+// Function to generate MD5 hash
+function md5(str) {
+    return str.split('').reduce((prevHash, currVal) =>
+        ((prevHash << 5) - prevHash) + currVal.charCodeAt(0), 0);
+}
+
+// Get Git email and create MD5 hash for Gravatar
+const gitEmail = getGitEmail();
+const emailHash = gitEmail ? md5(gitEmail).toString() : '';
+
 const options = mkOptions(OPTIONS, {
     wallpaper: opt(nix?.wallpaper || ""),
 
@@ -165,7 +183,7 @@ const options = mkOptions(OPTIONS, {
 
     quicksettings: {
         avatar: {
-            image: opt(`${Utils.HOME}/.dotfiles/non-nix/avatars/makise.png`),
+            image: opt(gitEmail ? `https://www.gravatar.com/avatar/${emailHash}?s=200&d=identicon` : `${Utils.HOME}/.dotfiles/non-nix/avatars/makise.png`),
             message: opt('See you,\nspace cowboy...'),
             size: opt(70),
         },
