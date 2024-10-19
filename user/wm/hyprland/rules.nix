@@ -33,9 +33,9 @@
             "minsize 1 1, title:^()$,class:^(steam)$"
 
             "float,class:^(moe.launcher.the-honkers-railway-launcher)$"
-            "float,class:^(lutris)$"
-            "size 1880 990,class:^(lutris)$"
-            "center,class:^(lutris)$"
+            # "float,class:^(lutris)$"
+            # "size 1880 990,class:^(lutris)$"
+            # "center,class:^(lutris)$"
 
             "fullscreen,class:^steam_app\d+$"
             "monitor 0,class:^steam_app_\d+$"

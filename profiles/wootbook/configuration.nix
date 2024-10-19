@@ -111,6 +111,12 @@
     vim
   ];
 
+  # The thumbnail service for Thunar
+  services.tumbler = {
+    enable = true;
+    # plugins = [ "pdf" "ffmpegthumbnailer" "jpeg" ];
+  };
+
   # OpenSSH for easier config
   services.openssh.enable = true;
   services.openssh.passwordAuthentication = true;

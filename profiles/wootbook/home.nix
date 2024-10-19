@@ -14,7 +14,8 @@
       ../../user/apps/git.nix
       ../../user/apps/android-studio.nix
       ../../user/apps/vscode.nix
-      # ../../user/apps/thunar.nix
+      ../../user/apps/thunar.nix
+      ../../user/apps/discord.nix
 
       # Shell
       ../../user/shell/zsh.nix
