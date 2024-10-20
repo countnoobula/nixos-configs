@@ -15,5 +15,4 @@ sudo nixos-rebuild switch --flake .
 shout out to [Serpentian/AlfheimOS](https://github.com/Serpentian/AlfheimOS/) for most of the inspo and help from his files
 
 # issues
-- bluetooth is not working
-- cannot share screen or take screenshots
+- bluetooth is not working on laptop (ath3k module - not a trainsmash right now, will figure out in time. works on desktop fine)
