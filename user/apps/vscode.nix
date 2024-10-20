@@ -8,83 +8,83 @@
       catppuccin.catppuccin-vsc-icons
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       # Helpers
-      {
-        name = "editorconfig";
-        publisher = "editorconfig";
-        version = "0.16.4";
-        sha256 = "sha256-j+P2oprpH0rzqI0VKt0JbZG19EDE7e7+kAb3MGGCRDk=";
-      }
-      {
-        name = "copilot";
-        publisher = "github";
-        version = "1.238.0";
-        sha256 = "sha256-9Vis8D4FJAHq+TKiqvhMmEVo26AGr63JRDmApLhmbx4=";
-      }
-      {
-        name = "copilot-chat";
-        publisher = "github";
-        version = "0.21.2";
-        sha256 = "sha256-DfS1R6sxAInx15uanDZo1ZKaedGM/qAi658SznO1C8I=";
-      }
+      # {
+      #   name = "editorconfig";
+      #   publisher = "editorconfig";
+      #   version = "0.16.4";
+      #   sha256 = "sha256-j+P2oprpH0rzqI0VKt0JbZG19EDE7e7+kAb3MGGCRDk=";
+      # }
+      # {
+      #   name = "copilot";
+      #   publisher = "github";
+      #   version = "1.238.0";
+      #   sha256 = "sha256-9Vis8D4FJAHq+TKiqvhMmEVo26AGr63JRDmApLhmbx4=";
+      # }
+      # {
+      #   name = "copilot-chat";
+      #   publisher = "github";
+      #   version = "0.21.2";
+      #   sha256 = "sha256-DfS1R6sxAInx15uanDZo1ZKaedGM/qAi658SznO1C8I=";
+      # }
 
-      # Trackers
-      {
-        name = "vscode-wakatime";
-        publisher = "WakaTime";
-        version = "24.2.0";
-        hash = "sha256-1AAerJsgmXJGiEOlxQRRo00JxYBm1Y8xI4rMQUcdv6k=";
-      }
+      # # Trackers
+      # {
+      #   name = "vscode-wakatime";
+      #   publisher = "WakaTime";
+      #   version = "24.2.0";
+      #   hash = "sha256-1AAerJsgmXJGiEOlxQRRo00JxYBm1Y8xI4rMQUcdv6k=";
+      # }
 
-      # Containers
-      {
-        name = "terraform";
-        publisher = "hashicorp";
-        version = "2.33.0";
-        sha256 = "sha256-kkZOk2+9lvCMAbtCjdh5RquWhK90QR5LRAOOBQruWVw=";
-      }
-      {
-        name = "vscode-docker";
-        publisher = "ms-azuretools";
-        version = "1.29.3";
-        sha256 = "sha256-z0RqFos0ZG2Id/alUBZJyroX3coTcJ+x2R8v4FD2Zcg=";
-      }
+      # # Containers
+      # {
+      #   name = "terraform";
+      #   publisher = "hashicorp";
+      #   version = "2.33.0";
+      #   sha256 = "sha256-kkZOk2+9lvCMAbtCjdh5RquWhK90QR5LRAOOBQruWVw=";
+      # }
+      # {
+      #   name = "vscode-docker";
+      #   publisher = "ms-azuretools";
+      #   version = "1.29.3";
+      #   sha256 = "sha256-z0RqFos0ZG2Id/alUBZJyroX3coTcJ+x2R8v4FD2Zcg=";
+      # }
 
 
-      # CI
-      {
-        name = "vscode-github-actions";
-        publisher = "github";
-        version = "0.27.0";
-        sha256 = "sha256-sZ831fPgy/HGsXL1gTezbTsnVcYjwxEd79JfMu1jaGo=";
-      }
+      # # CI
+      # {
+      #   name = "vscode-github-actions";
+      #   publisher = "github";
+      #   version = "0.27.0";
+      #   sha256 = "sha256-sZ831fPgy/HGsXL1gTezbTsnVcYjwxEd79JfMu1jaGo=";
+      # }
 
-      # Collab
-      {
-        name = "vsliveshare";
-        publisher = "ms-vsliveshare";
-        version = "1.0.5941";
-        sha256 = "sha256-s7N6Qywq/SaubOOGw3+Rx1sl/Y1tHrtA2Cz8KiTB62I=";
-      }
+      # # Collab
+      # {
+      #   name = "vsliveshare";
+      #   publisher = "ms-vsliveshare";
+      #   version = "1.0.5941";
+      #   sha256 = "sha256-s7N6Qywq/SaubOOGw3+Rx1sl/Y1tHrtA2Cz8KiTB62I=";
+      # }
 
-      # Nix
-      {
-        name = "nix-ide";
-        publisher = "jnoortheen";
-        version = "0.3.5";
-        sha256 = "sha256-hiyFZVsZkxpc2Kh0zi3NGwA/FUbetAS9khWxYesxT4s=";
-      }
-      {
-        name = "nix-extension-pack";
-        publisher = "pinage404";
-        version = "3.0.0";
-        sha256 = "sha256-cWXd6AlyxBroZF+cXZzzWZbYPDuOqwCZIK67cEP5sNk=";
-      }
-      {
-        name = "nix-env-selector";
-        publisher = "arrterian";
-        version = "1.0.11";
-        sha256 = "sha256-dK0aIH8tkG/9UGblNO0WwxJABBEEKEy4nSmIwdDpf4Q=";
-      }
+      # # Nix
+      # {
+      #   name = "nix-ide";
+      #   publisher = "jnoortheen";
+      #   version = "0.3.5";
+      #   sha256 = "sha256-hiyFZVsZkxpc2Kh0zi3NGwA/FUbetAS9khWxYesxT4s=";
+      # }
+      # {
+      #   name = "nix-extension-pack";
+      #   publisher = "pinage404";
+      #   version = "3.0.0";
+      #   sha256 = "sha256-cWXd6AlyxBroZF+cXZzzWZbYPDuOqwCZIK67cEP5sNk=";
+      # }
+      # {
+      #   name = "nix-env-selector";
+      #   publisher = "arrterian";
+      #   version = "1.0.11";
+      #   sha256 = "sha256-dK0aIH8tkG/9UGblNO0WwxJABBEEKEy4nSmIwdDpf4Q=";
+      # }
     ];
     userSettings = {
       "workbench.iconTheme" = "catppuccin-mocha";

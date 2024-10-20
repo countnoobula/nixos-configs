@@ -14,8 +14,9 @@
     hyprland = {
       enable = true;
       xwayland.enable = true;
-      package = inputs.hyprland.packages.${pkgs.system}.default;
-      portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+      # package = inputs.hyprland.packages.${pkgs.system}.default;
+      # portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+      portalPackage = pkgs.xdg-desktop-portal-hyprland;
     };
   };
 

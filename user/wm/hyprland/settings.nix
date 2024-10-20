@@ -6,12 +6,6 @@ in {
   ];
 
   wayland.windowManager.hyprland.settings = {
-    monitor = [
-      "eDP-1,2560x1600@120,0x0, 1.6"
-      "HDMI-A-1,5120x1440@60,2560x0, 1"
-      ",preferred,auto,1"
-    ];
-
     exec-once = [
       "swww-daemon &"
       "ags &"
@@ -86,7 +80,7 @@ in {
 
     device = {
         name = "logitech-usb-receiver-mouse";
-        sensitivity = -1.0;
+        sensitivity = -0.7;
     };
 
     gestures = {

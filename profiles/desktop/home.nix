@@ -12,7 +12,7 @@
       # Apps
       ../../user/apps/kitty.nix
       ../../user/apps/git.nix
-      ../../user/apps/android-studio.nix
+      # ../../user/apps/android-studio.nix
       ../../user/apps/vscode.nix
       # ../../user/apps/thunar.nix
 
@@ -99,6 +99,7 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
+    nwg-displays # display config
 
     # browser
     google-chrome
@@ -147,6 +148,16 @@
       package = pkgs.papirus-icon-theme;
     };
   };
+
+  wayland.windowManager.hyprland.settings.monitor = [
+    "HDMI-A-1,2560x1080@60.0,730x1040,1.0"
+    "DP-1,2560x1080@60.0,3290x1040,1.0"
+    "DP-3,5120x1440@239.76,730x2120,1.0,bitdepth,10"
+    # "DP-1, 2560x1080@60, 0x0, 1"
+    # "HDMI-A-1, 2560x1080@60, 2560x0, 1"
+    # "DP-3, 5120x1440@239.76, 1080x0, 1"
+    ",preferred,auto,1"
+  ];
 
   # environment.shells = with pkgs; [ zsh ];
   programs.direnv.enable = true;

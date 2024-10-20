@@ -11,9 +11,10 @@
       # Apps
       ../../system/apps/cron.nix
       ../../system/apps/steam.nix
+      ../../system/apps/lutris.nix
 
       # Power Options
-      ../../system/power/nosleep.nix
+      # ../../system/power/nosleep.nix
 
       # Security
       ../../system/security/firewall.nix
@@ -27,6 +28,9 @@
     ];
 
   system.stateVersion = "24.05";
+
+  # Load nct6775 for fan control
+  boot.kernelModules = [ "nct6775" ];
 
   # Enable this for proprietary drivers [Looking at you Atheros Bluetooth]
   hardware.enableRedistributableFirmware = true;
@@ -105,11 +109,14 @@
     wget
     git
     vim
+    lm_sensors
   ];
 
   # OpenSSH for easier config
   services.openssh.enable = true;
-  services.openssh.passwordAuthentication = true;
+  services.openssh.settings = {
+    PasswordAuthentication = true;
+  };
 
   programs.direnv.enable = true;
 }

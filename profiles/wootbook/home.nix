@@ -149,6 +149,12 @@
     };
   };
 
+  wayland.windowManager.hyprland.settings.monitor = [
+    "eDP-1,2560x1600@120,0x0, 1.6"
+    "HDMI-A-1,5120x1440@60,2560x0, 1"
+    ",preferred,auto,1"
+  ];
+
   # environment.shells = with pkgs; [ zsh ];
   programs.direnv.enable = true;
 }

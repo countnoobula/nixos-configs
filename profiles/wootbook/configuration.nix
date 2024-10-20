@@ -10,6 +10,7 @@
 
       # Drivers
       ../../system/hardware
+      ../../system/hardware/input.nix
 
       # Apps
       ../../system/apps/cron.nix
@@ -28,6 +29,11 @@
 
       # Window manager
       ../../system/wm/hyprland.nix
+
+      # Hardware packages
+      <nixos-hardware/common/pc/laptop>
+      <nixos-hardware/common/pc/ssd>
+      <nixos-hardware/tuxedo/infinitybook/v4>
     ];
 
   system.stateVersion = "24.05";
@@ -119,7 +125,9 @@
 
   # OpenSSH for easier config
   services.openssh.enable = true;
-  services.openssh.passwordAuthentication = true;
+  services.openssh.settings = {
+    PasswordAuthentication = true;
+  };
 
   # Nvidia Prime
   hardware.nvidia.prime = {
