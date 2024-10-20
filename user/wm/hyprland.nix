@@ -1,4 +1,4 @@
-{ inputs, config, lib, settings, pkgs, ... }:
+{ inputs, config, lib, settings, pkgs, hy3, ... }:
 
 {
     imports = [
@@ -18,6 +18,9 @@
         systemd.enable = true;
         plugins = [
             pkgs.hyprlandPlugins.hyprexpo
+            pkgs.hyprlandPlugins.hyprtrails
+            pkgs.hyprlandPlugins.hyprscroller
+            pkgs.hyprlandPlugins.hy3
         ];
     };
 }

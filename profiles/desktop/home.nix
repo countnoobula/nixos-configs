@@ -12,9 +12,14 @@
       # Apps
       ../../user/apps/kitty.nix
       ../../user/apps/git.nix
-      # ../../user/apps/android-studio.nix
+      ../../user/apps/discord.nix
+      ../../user/apps/android-studio.nix
       ../../user/apps/vscode.nix
-      # ../../user/apps/thunar.nix
+      ../../user/apps/slack.nix
+      ../../user/apps/thunar.nix
+      ../../user/apps/google-chrome.nix
+      ../../user/apps/gitkraken.nix
+      ../../user/apps/jetbrains-toolbox.nix
 
       # Shell
       ../../user/shell/zsh.nix
@@ -77,6 +82,7 @@
     zstd
     gnupg
     sway-contrib.grimshot
+    neofetch
 
     # nix related
     #
@@ -100,13 +106,6 @@
     pciutils # lspci
     usbutils # lsusb
     nwg-displays # display config
-
-    # browser
-    google-chrome
-
-    # dev tools
-    gitkraken
-    jetbrains-toolbox
 
     # games
     ferium

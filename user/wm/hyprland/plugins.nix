@@ -15,6 +15,10 @@
             gesture_distance = 300 # how far is the "max"
             gesture_negative = true # positive = swipe down. Negative = swipe up.
         }
+
+        hyprtrails {
+            color = rgba(ffaa00ff)
+        }
     }
   ''; 
 }
