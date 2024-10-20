@@ -21,7 +21,7 @@ in {
       allow_tearing = true;
       "col.active_border" = "rgba(${config.lib.stylix.colors.base0D}ff)";
       "col.inactive_border" = "rgba(${config.lib.stylix.colors.base02}ff)";
-      "layout" = "scroller";
+      # "layout" = "scroller";
     };
 
     decoration = lib.mkForce {
