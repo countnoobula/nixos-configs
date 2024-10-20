@@ -20,6 +20,8 @@
       ../../user/apps/google-chrome.nix
       ../../user/apps/gitkraken.nix
       ../../user/apps/jetbrains-toolbox.nix
+      ../../user/apps/gimp.nix
+      ../../user/apps/spotify.nix
 
       # Shell
       ../../user/shell/zsh.nix
