@@ -11,6 +11,10 @@
     enableCompletion = true;
     syntaxHighlighting.enable = true;
 
+    initExtra = ''
+      . "$HOME/.dotfiles/non-nix/zsh/session-vars.sh"
+    '';
+
     shellAliases = {
       ll = "ls -lah";
 
@@ -26,6 +30,10 @@
     history = {
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
+    };
+
+    sessionVariables = {
+      EDITOR = "vim";
     };
   };
 

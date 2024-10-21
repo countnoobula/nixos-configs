@@ -3,7 +3,7 @@ rec {
     system = "x86_64-linux";
     hostname = "nixos"; # Hostname
     username = "countnoobula"; # Username
-    profile = "desktop"; # Select from profiles directory
+    profile = "wootbook"; # Select from profiles directory
     timezone = "Africa/Johannesburg"; # Select timezone
     locale = "en_ZA.UTF-8"; # Select locale
     name = "Shaun van Tonder"; # Name (git config)

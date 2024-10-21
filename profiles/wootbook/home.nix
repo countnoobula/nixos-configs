@@ -16,6 +16,13 @@
       ../../user/apps/vscode.nix
       ../../user/apps/thunar.nix
       ../../user/apps/discord.nix
+      ../../user/apps/devbox.nix
+      ../../user/apps/google-chrome.nix
+      ../../user/apps/gitkraken.nix
+      ../../user/apps/jetbrains-toolbox.nix
+      ../../user/apps/slack.nix
+      ../../user/apps/gimp.nix
+      ../../user/apps/spotify.nix
 
       # Shell
       ../../user/shell/zsh.nix
@@ -100,13 +107,6 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
-
-    # browser
-    google-chrome
-
-    # dev tools
-    gitkraken
-    jetbrains-toolbox
 
     # games
     ferium
