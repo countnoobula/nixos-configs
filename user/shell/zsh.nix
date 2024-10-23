@@ -13,6 +13,7 @@
 
     initExtra = ''
       . "$HOME/.dotfiles/non-nix/zsh/session-vars.sh"
+      . "$HOME/.dotfiles/non-nix/zsh/z.sh"
     '';
 
     shellAliases = {
