@@ -17,6 +17,7 @@
       ../../user/apps/vscode.nix
       ../../user/apps/slack.nix
       ../../user/apps/thunar.nix
+      ../../user/apps/devbox.nix
       ../../user/apps/google-chrome.nix
       ../../user/apps/gitkraken.nix
       ../../user/apps/jetbrains-toolbox.nix
