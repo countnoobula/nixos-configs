@@ -23,6 +23,7 @@
       ../../user/apps/jetbrains-toolbox.nix
       ../../user/apps/gimp.nix
       ../../user/apps/spotify.nix
+      ../../user/apps/opera.nix
 
       # Shell
       ../../user/shell/zsh.nix

@@ -23,6 +23,7 @@
       ../../user/apps/slack.nix
       ../../user/apps/gimp.nix
       ../../user/apps/spotify.nix
+      ../../user/apps/opera.nix
 
       # Shell
       ../../user/shell/zsh.nix
@@ -150,7 +151,7 @@
   };
 
   wayland.windowManager.hyprland.settings.monitor = [
-    "eDP-1,2560x1600@120,0x0, 1.6"
+    "eDP-1,2560x1600@120,0x0,1.6,bitdepth,10"
     "HDMI-A-1,5120x1440@60,2560x0, 1"
     ",preferred,auto,1"
   ];
