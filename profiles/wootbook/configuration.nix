@@ -112,6 +112,7 @@
     ntfs3g
     inetutils
     lsof
+    acpi
     wget
     git
     vim
