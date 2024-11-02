@@ -111,6 +111,7 @@
 
     # games
     ferium
+    moonlight-qt
   ];
 
   xdg.enable = true;
